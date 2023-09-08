@@ -93,7 +93,17 @@ label[for="female"] {
 
 /* Styling the profile picture */
 
-#preview {
+#preview1  {
+  /* display: block; */
+  margin-top: 10px;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border: 2px solid #607c9a; /* Add a border */
+  border-radius: 50%; /* Create a circular shape */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+#preview2  {
   /* display: block; */
   margin-top: 10px;
   width: 100px; /* Adjust the width as needed */
