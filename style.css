@@ -92,7 +92,6 @@ label[for="female"] {
 }
 
 /* Styling the profile picture */
-
 #preview1,
 #preview2 {
   /* display: block; */
@@ -156,7 +155,7 @@ select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #469ae3;
   border-radius: 5px;
 }
 
