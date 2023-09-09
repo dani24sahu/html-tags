@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Registration Form</title>
@@ -12,7 +12,7 @@
     <!--enctype specify how the form data should be encoded when submitting it to the server-->
     <!--method="POST", so enctype is the MIME type of form submission-->
     <div class="container">
-      <h1 class="heading" style="color: black;">Registration Form</h1>
+      <h1 class="heading" style="color: black">Registration Form</h1>
       <form action="#" method="post" enctype="multipart/form-data">
         <!-- Fieldset groups related form elements and includes a legend for grouping -->
         <fieldset>
@@ -69,7 +69,7 @@
               />
             </li>
             <!-- Profile picture -->
-            <li>
+            <li id="image">
               <label for="profile-picture">Default Profile Picture:</label>
               <img
                 id="preview1"
@@ -92,14 +92,6 @@
                 crossorigin="anonymous"
                 decoding="auto"
                 loading="lazy"
-              />
-              <img
-                id="preview2"
-                src="https://source.unsplash.com/3tYZjGSBwbk"
-                alt="Default Profile Picture"
-                width="100"
-                height="100"
-                crossorigin="use-credentials"
               />
             </li>
             <!-- Radio buttons for selecting gender -->
