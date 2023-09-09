@@ -13,11 +13,15 @@ body {
   padding: 0;
 }
 
-div .heading {
+h1.heading {
   text-align: center;
   padding: 20px;
   background-color: #0056b3;
   color: #fff;
+}
+
+h1.heading{
+  color: red !important;  /* !important is used to override the inline style */
 }
 
 /* Styling the form container */
