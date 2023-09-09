@@ -21,7 +21,7 @@ h1.heading {
 }
 
 h1.heading{
-  color: red !important;  /* !important is used to override the inline style */
+  color: white !important;  /* !important is used to override the inline style */
 }
 
 /* Styling the form container */
