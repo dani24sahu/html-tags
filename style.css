@@ -171,3 +171,15 @@ label::selection {
   background: dodgerblue;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
