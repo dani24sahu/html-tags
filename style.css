@@ -56,19 +56,6 @@ label {
   font-weight: bold;
 }
 
-/* input[type="text"],
-input[type="email"],
-textarea,
-input[type="password"],
-input[type="file"],
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-} */
-
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -120,15 +107,6 @@ label[for="female"] {
 }
 
 /* Style the submit and reset buttons */
-/* button[type="submit"],
-input[type="reset"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} */
 
 button[type="submit"],
 input[type="reset"] {
@@ -138,7 +116,7 @@ input[type="reset"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: 16px;
 }
 
 button[type="submit"]:hover,
@@ -183,15 +161,30 @@ label::selection {
   color: white;
 }
 
+/* :checked pseudo class */
+input:checked + label {
+  color: dodgerblue;
+}
+
+/* Radio element, when checked */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 1px dodgerblue;
+}
+
+/* Checkbox element, when checked */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 1px dodgerblue;
+}
+
+/* Option elements, when selected */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: dodgerblue;
+}
+
 @media screen and (max-width: 600px) {
   form {
     padding: 10px;
-  }
-
-  .btnWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
   }
 }
 
@@ -202,10 +195,14 @@ label::selection {
     height: 50%;
     position: relative;
   }
+}
 
-  .btnWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+@media (min-width: 4000px) and (max-width: 2000px) {
+  .container {
+    width: 100%;
+  }
+  form {
+    width: 6000px;
+    height: 1000px;
   }
 }
