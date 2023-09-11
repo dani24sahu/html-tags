@@ -183,8 +183,26 @@ option:checked {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    display: flex;
+  }
   form {
     padding: 10px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+
+  #id {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -195,6 +213,19 @@ option:checked {
     height: 50%;
     position: relative;
   }
+
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+
+  #id {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 @media (min-width: 4000px) and (max-width: 2000px) {
@@ -204,5 +235,18 @@ option:checked {
   form {
     width: 6000px;
     height: 1000px;
+  }
+
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+
+  #id {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
