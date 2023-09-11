@@ -196,7 +196,6 @@ option:checked {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
   }
 
   #id {
@@ -218,7 +217,11 @@ option:checked {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+  }
+
+  .genderWrapper {
+    display: flex;
+    flex-direction: row;
   }
 
   #id {
@@ -241,12 +244,54 @@ option:checked {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
   }
 
   #id {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-height: 300px) {
+  .form {
+    padding: 10px;
+    max-width: 912px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  form {
+    padding: 10px;
+    max-width: 1200px;
+    font-size: large;
+  }
+
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #id {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media (orientation: landscape) {
+  .form {
+    max-width: 915px;
+  }
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .interesrWrapper {
+    display: flex;
+    flex-direction: row;
   }
 }

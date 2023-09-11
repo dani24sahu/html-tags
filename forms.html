@@ -96,11 +96,13 @@
             </li>
             <!-- Radio buttons for selecting gender -->
             <li>
-              <label>Gender:</label>
-              <input type="radio" id="male" name="gender" value="male" />
-              <label for="male">Male</label>
-              <input type="radio" id="female" name="gender" value="female" />
-              <label for="female">Female</label>
+              <div class="genderWrapper">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+              </div>
             </li>
             <!-- File input for uploading a file, accepts specific file formats -->
             <li>
@@ -124,7 +126,7 @@
           <!-- Unordered list for organizing form elements -->
           <ul>
             <!-- Checkboxes for selecting interests -->
-            <li>
+            <li class="interestWrapper">
               <label>Interests:</label>
               <input
                 type="checkbox"
