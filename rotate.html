@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate Transformations</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        text-align: center;
+        line-height: 100px;
+        font-size: 1.2rem;
+        transform-origin: center;
+      }
+
+      /* RotateX */
+      .box.rotateX {
+        transform: rotateX(45deg);
+      }
+
+      /* RotateY */
+      .box.rotateY {
+        transform: rotateY(45deg);
+      }
+
+      /* RotateZ */
+      .box.rotateZ {
+        transform: rotateZ(45deg);
+      }
+
+      /* Rotate (2D) */
+      .box.rotate {
+        transform: rotate(45deg);
+      }
+
+      /* Rotate3d (3D) */
+      .box.rotate3d {
+        transform: rotate3d(1, 1, 1, 45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box rotateX">rotateX</div>
+      <div class="box rotateY">rotateY</div>
+      <div class="box rotateZ">rotateZ</div>
+      <div class="box rotate">rotate</div>
+      <div class="box rotate3d">rotate3d</div>
+    </div>
+  </body>
+</html>

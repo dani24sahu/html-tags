@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Math Functions Example</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 150px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: calc(50% - 10px); /* Using calc() to calculate width */
+        height: calc(100px + 20px); /* Using calc() with addition */
+        background-color: coral;
+        text-align: center;
+        font-size: min(2rem, 5vw); /* Using min() to set font size */
+        border: 2px solid darkorange;
+        padding: 10px;
+        border-radius: round(
+          10px
+        ); /* Using round() to round the border radius */
+      }
+
+      .box:hover {
+        width: calc(100% - 20px); /* Adjust width on hover */
+        border-radius: max(
+          0px,
+          20px
+        ); /* Using max() to control border radius on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">CSS Math Functions</div>
+    </div>
+  </body>
+</html>
